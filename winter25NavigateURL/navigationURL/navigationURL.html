@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Start LWC here" icon-name="standard:activity">
+        <div class="slds-p-horizontal_medium">
+            <lightning-input type="text" variant="standard" name="name" label="Name" onchange={handleNameChange}></lightning-input>
+            <lightning-input type="email" variant="standard" name="email" label="Email" onchange={handleEmailChange}></lightning-input>
+            <br/>
+            <lightning-button variant="brand" label="Teleport to other LWC using its URL" title="Teleport to other LWC using its URL"
+                onclick={navigateToTargetLWC} class="slds-m-left_x-small slds-m-top_medium"></lightning-button>
+        </div>
+    </lightning-card>
+</template>
